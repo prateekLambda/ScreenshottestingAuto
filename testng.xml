@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="LambaTestSuite" parallel="tests">
+
+    <test name="WIN10Chrome75">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="version" value="74.0"/>
+        <parameter name="platform" value="win10"/>
+        <parameter name="fixedIp" value="10.47.240.252"/>
+
+        <packages>
+            <package name="ScreenshottestingAuto"/>
+        </packages>
+    </test> <!-- Test -->
+
+  <!--  <test name="WIN10TEST">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="version" value="66.0"/>
+        <parameter name="platform" value="WIN10"/>
+        <packages>
+            <package name="ScreenshottestingAuto"/>
+        </packages>
+    </test>
+    <test name="MACTEST">
+    <parameter name="browser" value="safari"/>
+    <parameter name="version" value="12.0"/>
+    <parameter name="platform" value="macOS Mojave"/>
+    <packages>
+        <package name="ScreenshottestingAuto"/>
+    </packages>
+    </test> -->
+
+</suite>
